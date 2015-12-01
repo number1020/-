@@ -1,21 +1,152 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset='utf-8'/>
-	<title></title>
-	<script type="text/javascript" src="jq/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript">
+    <meta charset='utf-8' />
+    <title></title>
+    <script type="text/javascript" src="jq/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+    </script>
+    <style type="text/css">
+    body,
+    div,
+    ul,
+    li{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .header li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 8px 10px;
+        font-size: 13px;
+        color: white;
+    }
+    
+    li a {
+        font-size: 13px;
+        color: white;
+    }
+    
+    .header {
+        width: 100%;
+        height: 32px;
+        background-color: rgba(169, 169, 169, 0.5);
+    }
+    
+    .nav {
+        float: right;
+    }
+    
+    body {
+        background: url(bg.jpg) 
+         no-repeat;
+        background-size: cover;
+    }
+    
+    .more {
+        float: right;
+        width: 88px;
+        height: 32px;
+        background-color: #4193F7;
+        text-align: center;
+        font-size: 13px;
+        color: white;
+        line-height: 32px;
+    }
+    
+    .more li {
+        display: none;
+    }
+    
+    .seach {
+        width: 100%;
+        text-align: center;
+        margin-top: 13px;
 
-	</script>
 
-	<style type="text/css">
-	</style>
+    }
+    
+    .seach input {
+    	margin-top: 10px;
+    }
+    
+    .seach img {
+        width: 270px;
+        height: 129px;
+        display: inline-block;
+    }
+    
+    .inpare {
+        width: 537px;
+        height: 38px;
+        vertical-align: bottom;
+        font-size: 15px;
 
+
+    }
+    
+    .seabtn {
+        width: 120px;
+        height: 44px;
+        -webkit-appearance: button;
+        margin-left: -4px;
+        position: relative;
+        font-size: 16px;
+
+
+    }
+    .main{
+    	width: 895px;
+    	height: 400px;
+    	background-color: grey;
+    	margin: 70px auto 60px auto;
+    }
+    .main span{
+    	list-style: none;
+    	display: inline-block;
+    	width: 
+    }
+    </style>
 </head>
+
 <body>
-<div>
-	<div class="header"></div>
-	<
-</div>
+    <div>
+        <div class="header">
+            <!-- 顶部菜单 -->
+            <ul class="more">更多产品
+                <li><img src=""><a href="">1</a></li>
+                <li><img src=""><a href="">2</a></li>
+                <li><img src=""><a href="">3</a></li>
+                <li><img src=""><a href="">4</a></li>
+                <li><img src=""><a href="">5</a></li>
+            </ul>
+            <!-- 更多产品 -->
+            <ul class="nav">
+                <li><a href="">糯米</a></li>
+                <li><a href="">新闻</a></li>
+                <li><a href="">hao123</a></li>
+                <li><a href="">地图</a></li>
+                <li><a href="">视频</a></li>
+                <li><a href="">贴吧</a></li>
+                <li><a href="">李彦宏</a></li>
+                <li><a href="">设置</a></li>
+            </ul>
+            <!-- 分类 -->
+        </div>
+        <div class="seach">
+           <div><img src="logo.png"></div> 
+            <input type="text" class="inpare">
+            <input type="button" value="百度一下" class="seabtn">
+        </div>
+        <div class="main">
+        	<div class="tab">
+        		<span>我的关注</span>
+        		<span>购物</span>
+        	</div>
+        </div>
+    </div>
 </body>
+
 </html>
